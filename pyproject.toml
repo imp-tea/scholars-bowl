@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scholars-bowl-pipeline"
+version = "0.1.0"
+description = "Corpus-grounded quiz-bowl extraction and Batch API experiments"
+requires-python = ">=3.11"
+dependencies = ["openai>=2,<3", "pydantic>=2.10,<3", "python-dotenv>=1,<2", "filelock>=3,<4", "tiktoken>=0.9,<1"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.11,<1"]
+
+[project.scripts]
+qb = "scholars_bowl.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "datasets": [
+    {"file": "high-school-tossups.csv", "level": "high-school", "kind": "tossup"},
+    {"file": "high-school-bonuses.csv", "level": "high-school", "kind": "bonus"},
+    {"file": "middle-school-tossups.csv", "level": "middle-school", "kind": "tossup"},
+    {"file": "middle-school-bonuses.csv", "level": "middle-school", "kind": "bonus"}
+  ]
+}
